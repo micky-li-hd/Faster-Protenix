@@ -1,0 +1,35 @@
+{
+  "status": "AUDIT_PIPELINE_PREPARED_RUN_STILL_ACTIVE",
+  "accepted": false,
+  "live": [
+    "poll_permutation_metadata_full128.py",
+    "collect_permutation_metadata_full128_prefixes.py",
+    "review_permutation_metadata_prefixes.py"
+  ],
+  "after_first_reference_and_candidate_clean": [
+    "review_permutation_metadata_closed_pair.py"
+  ],
+  "after_all_three_clean": [
+    "audit_permutation_metadata_full128.py",
+    "collect_permutation_metadata_full128.py",
+    "audit_permutation_metadata_full128_softmax_codegen.py",
+    "audit_permutation_metadata_full128_code_identity.py",
+    "supplement_permutation_metadata_code_identity.py",
+    "review_permutation_metadata_full128.py"
+  ],
+  "required": "Exact initial state, input/RNG/LR/gradient counts; finite checkpoints at127;216training and138normal/EMA comparisons; steady16..127 and full cold process timings; memory/source/codegen/cleanup. No native-repeat waiver.",
+  "short_machine_code_audit": "Already complete: permutation_metadata_native8/CODE_IDENTITY_REVIEW.json; raw SASS identical across both short arms.",
+  "independent_gpu_experiments": "Deferred until this full128 run and its shared ownership cleanup are terminal.",
+  "tool_sha256": {
+    "poll_permutation_metadata_full128.py": "6b31d9b431d1120714d82fadc890b09e48bafe810de925917163fea2b3a343e8",
+    "collect_permutation_metadata_full128_prefixes.py": "61df6c7b3b010fb7d067c1f41a0d5b906b9d4137433a8e1227ffb936b774798b",
+    "review_permutation_metadata_prefixes.py": "796203d1ba01ac7d86d5c98209388e8aa858ee9111f6e7ab33b9d31ce676246d",
+    "review_permutation_metadata_closed_pair.py": "e2f709928053b1da377867a7a3942ea6354bf0b6c580cf3f4e87d2542781f2b0",
+    "audit_permutation_metadata_full128.py": "32a43a96dde8c00a7d60439e5c6f64045cf7f68511f4aa731e42a80e9798168c",
+    "collect_permutation_metadata_full128.py": "af1840165810eb8a6afa2dd566f4417b5ea7d5ed603ab983e81715a69f7c5156",
+    "audit_permutation_metadata_full128_softmax_codegen.py": "3ae00011ecad8a385cef545e63626411ac7630e440345af70fe1cb835ee93e22",
+    "audit_permutation_metadata_full128_code_identity.py": "c0e6bd1ab8692079e809cc96b8036e846c64f079737c9a17102f061d6f66881b",
+    "supplement_permutation_metadata_code_identity.py": "16d66f49d5230001c4770cf2eda3d5998edd88eb72ae71953a0d59eb09fd3c6b",
+    "review_permutation_metadata_full128.py": "8b2df6b1d0bff0f6b72b5a125df1f1f9c95a64cf75a4fef053d6a536c83aa31b"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "status": "COLD_COMPILER_PREPARED_NOT_RUN",
+  "accepted": false,
+  "mechanism": "Fresh per-run cold_simt folder, exclusive build lock, nonce inherited CPU-only subprocess, no retry after partial build, source/dependency/binary/codegen hashes, training environment unchanged.",
+  "pending": "Exercise concurrent worker calls and actual cold compilation after current native retention run is terminal; do not add compiler CPU contention during training measurements."
+}

@@ -1,0 +1,28 @@
+{
+  "toolchain": "/root/tianbali/protenix_8h20_fast_layernorm_prepare/toolchain",
+  "cuda_flags": [
+    "-O3",
+    "--ftz=false",
+    "--prec-div=true",
+    "--prec-sqrt=true",
+    "-maxrregcount=96",
+    "-U__CUDA_NO_HALF_OPERATORS__",
+    "-U__CUDA_NO_HALF_CONVERSIONS__",
+    "--expt-relaxed-constexpr",
+    "--expt-extended-lambda",
+    "-DVERSION_GE_1_1",
+    "-DVERSION_GE_1_3",
+    "-DVERSION_GE_1_5",
+    "-Xptxas=-v"
+  ],
+  "cxx_flags": [
+    "-O3",
+    "-DVERSION_GE_1_1",
+    "-DVERSION_GE_1_3",
+    "-DVERSION_GE_1_5"
+  ],
+  "sources": {
+    "affine_binding.cpp": "18da4f56678ad229cf761bffa401a75f7a6bd94e5921e50af8a768fae2a56edf",
+    "affine_kernel.cu": "b81b2ab454eec1211a639bcd2e968c091f09a13e6a6c08bc1ffb0aaab92dfa73"
+  }
+}

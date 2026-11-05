@@ -1,0 +1,122 @@
+{
+  "status": "FULL128_COMPLETE_REJECTED_216_TRAIN_135_OF138_EVAL",
+  "accepted": false,
+  "utc": "2026-11-05T04:32:36.443435+00:00",
+  "review_sha256": "37474d34dd3eca05b1e3045844eb8986ae925173aa276dc8fb3b45b3bd756659",
+  "ratios": {
+    "steady": 1.686701801671487,
+    "process": 1.5523771754889137
+  },
+  "steady_seconds": {
+    "reference128_r1": 10.310217921588835,
+    "candidate128": 6.070592928810844,
+    "reference128_r2": 10.168342138890043
+  },
+  "process_seconds": {
+    "reference128_r1": 1517.670637048781,
+    "candidate128": 968.8294463371858,
+    "reference128_r2": 1490.3068018220365
+  },
+  "failed_eval": [
+    {
+      "arms": [
+        "reference128_r1",
+        "candidate128"
+      ],
+      "metrics": [
+        {
+          "metric": "recentPDB_1536_sample384_0925::recentPDB_1536_sample384_0925/ema0.999_lddt/complex/plddt.rank1.avg",
+          "reference": 0.02850658050738275,
+          "candidate": 0.026647275779396296,
+          "delta": 0.001859304727986455,
+          "limit": 0.0014253290253691377,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "arms": [
+        "reference128_r2",
+        "candidate128"
+      ],
+      "metrics": [
+        {
+          "metric": "recentPDB_1536_sample384_0925::recentPDB_1536_sample384_0925/ema0.999_lddt/complex/plddt.rank1.avg",
+          "reference": 0.025338572449982166,
+          "candidate": 0.026647275779396296,
+          "delta": 0.0013087033294141293,
+          "limit": 0.0012669286224991083,
+          "passed": false
+        }
+      ]
+    },
+    {
+      "arms": [
+        "reference128_r1",
+        "reference128_r2"
+      ],
+      "metrics": [
+        {
+          "metric": "recentPDB_1536_sample384_0925::recentPDB_1536_sample384_0925/ema0.999_lddt/complex/plddt.rank1.avg",
+          "reference": 0.02850658050738275,
+          "candidate": 0.025338572449982166,
+          "delta": 0.0031680080574005842,
+          "limit": 0.0014253290253691377,
+          "passed": false
+        }
+      ]
+    }
+  ],
+  "candidate_peak_allocated": 87921404416,
+  "candidate_peak_reserved": 100256448512,
+  "closure": {
+    "status": "COMPLETED_CLEAN_8GPU_IDLE",
+    "bindings_sha256": "ff17c51d6c12c65706932a4a35cbdae4b0c7d7020154389f81e9ec33a82d64d6",
+    "gpu_rows": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ],
+      [
+        7,
+        0,
+        0
+      ]
+    ],
+    "utc": "2026-11-05T04:31:40.720812+00:00",
+    "accepted": false,
+    "archive_sha256": "f7ccf36ff760dbf64a5be50b479613950432bd1bbf873fe582b2a4a8dc980df4"
+  },
+  "decision": "No promotion and no unchanged full128 retry. Native/native also fails same EMA plddt metric, but this neither proves a causal explanation nor waives frozen gates. Target2x not reached. Proceed to independently prepared packing composition probe, measuring incremental gain versus metadata-only."
+}

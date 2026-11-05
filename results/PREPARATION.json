@@ -1,0 +1,9 @@
+{
+  "status": "NATIVE8_ALL_GATES_PASS_FULL128_PREPARED",
+  "accepted": false,
+  "native8_review_sha256": "168b0146d01c4db9a8abd704f7cbed64f5f27e8ad5d51b3b518e3da7b85aeac8",
+  "candidate_change": "CPU preparation of discrete residue symmetry metadata only",
+  "original_arms": "All optimization switches off, immutable reference policy, unchanged work/precision/RNG/input fixture",
+  "frozen_threshold": "max(1e-4,0.05*abs(reference)); no waiver for native repeat",
+  "scope": "Full128 original/candidate/original with new CPU native residue metadata preparation in candidate only, after passing current-parent/candidate native8. Frozen precision, workload, input/RNG, checkpoint, 216 training and138 normal/EMA comparisons, cold process and memory gates. No 2x or convergence claim."
+}

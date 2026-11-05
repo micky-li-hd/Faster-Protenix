@@ -1,0 +1,2 @@
+# Scope these paths to this experiment only; do not edit system CUDA configuration.
+export LD_LIBRARY_PATH="/root/tianbali/protenix_8h20_20261031_round7/platform_abi:/root/tianbali/protenix_8h20_20261031_round7/cuda12_runtime:/root/tianbali/protenix_8h20_20261031_round7/base/lib/python3.12/site-packages/nvidia/cublas/lib:/root/tianbali/protenix_8h20_20261031_round7/base/lib/python3.12/site-packages/nvidia/cudnn/lib:/root/tianbali/protenix_8h20_20261031_round7/base/lib:${LD_LIBRARY_PATH:-}"

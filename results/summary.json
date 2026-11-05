@@ -1,0 +1,52 @@
+{
+  "status": "external_exploratory_case_frozen_judge_rejected",
+  "accepted": false,
+  "upstream": {
+    "repository": "https://github.com/bytedance/Protenix",
+    "version": "2.0.0",
+    "commit_recorded": false
+  },
+  "hardware": "8 x NVIDIA H20, single host",
+  "workload": {
+    "optimizer_updates": 128,
+    "crop_size": 384,
+    "diffusion_batch_size": 48,
+    "max_recycle": 4,
+    "effective_batch": 8,
+    "optimizer": "Adam",
+    "precision": "BF16 outer model with original FP32 diffusion exclusions"
+  },
+  "process_seconds": {
+    "reference_1": 1517.670637048781,
+    "candidate": 968.8294463371858,
+    "reference_2": 1490.3068018220365,
+    "ratio": 1.5523771754889137
+  },
+  "steady_step_seconds": {
+    "scope": "mean max-rank observed step seconds, updates 16 through 127",
+    "reference_1": 10.310217921588835,
+    "candidate": 6.070592928810844,
+    "reference_2": 10.168342138890043,
+    "ratio": 1.686701801671487
+  },
+  "validation": {
+    "training_comparisons_passed": 216,
+    "training_comparisons_total": 216,
+    "evaluation_comparisons_passed": 135,
+    "evaluation_comparisons_total": 138,
+    "normal_and_ema_checkpoints_finite": 6,
+    "failed_metric": "recentPDB_1536_sample384_0925/ema0.999_lddt/complex/plddt.rank1.avg",
+    "reference_repeat_also_failed": true,
+    "frozen_judge_accepted": false
+  },
+  "candidate_memory_bytes": {
+    "peak_allocated": 87921404416,
+    "peak_reserved": 100256448512
+  },
+  "limitations": [
+    "The frozen judge rejected the candidate; no waiver was applied.",
+    "This is a fixed 128-update engineering fixture, not full-corpus convergence.",
+    "The exact training fixture and generated checkpoints are not redistributed.",
+    "The upstream Git commit was not recorded; the source snapshot is hash-manifested instead."
+  ]
+}

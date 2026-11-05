@@ -1,0 +1,49 @@
+{
+  "status": "COMPLETED_CLEAN_8GPU_IDLE",
+  "bindings_sha256": "ff17c51d6c12c65706932a4a35cbdae4b0c7d7020154389f81e9ec33a82d64d6",
+  "gpu_rows": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0
+    ],
+    [
+      5,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      0
+    ]
+  ],
+  "utc": "2026-11-05T04:31:40.720812+00:00",
+  "accepted": false,
+  "archive_sha256": "f7ccf36ff760dbf64a5be50b479613950432bd1bbf873fe582b2a4a8dc980df4"
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/kernel_backward.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/kernel_backward.h",
+    "sha256": "ae21c8fc2d3fcd606f9941b9926a54ea59290c36f5d927b277aeb27cf61080eb"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/debug_utils.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/debug_utils.h",
+    "sha256": "0bc7029c77ea42c8144e92814a7417c7b49acb4dee002fba0763a35a7ee27c02"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm_kernel_utils.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm_kernel_utils.h",
+    "sha256": "ce914b76b79d92c487a44cfc3ed19f41da947d0354672ab716489091fb0a7cbf"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma.h",
+    "sha256": "5bdb4c6606d73a76fd740e762dcda90b175039d5e13cec18e1b074e1e9179397"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/find_default_mma.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/find_default_mma.h",
+    "sha256": "223613991c96520b6dbeeefeb160b948483f80cb60800e81f184c22a0d335994"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/mma_accum_lambda_iterator.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/mma_accum_lambda_iterator.h",
+    "sha256": "ec666626f49dd4b6570a3f284735bf38bbbd5d56b53c49ffd3ff1f9345462784"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/mma_from_smem.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/mma_from_smem.h",
+    "sha256": "aa18d0eb6812037d128471464a20887192c84193e8f78396b8d3b1a3442abce8"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/epilogue/epilogue_pipelined.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/epilogue/epilogue_pipelined.h",
+    "sha256": "1c354cf139f6ae6b05fd22c41e3b18ad088d9d1a7165f58a0797c305d5ad45fa"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/epilogue_predicated_tile_iterator.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/epilogue_predicated_tile_iterator.h",
+    "sha256": "bee2b0cf715346a45c96a45a16bbe7f362a2a74d2ec5b1cd4410881a3920fd4f"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/transform/tile_smem_loader.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/transform/tile_smem_loader.h",
+    "sha256": "798f55c4a47fadbaad11316d7a175f1063f63919069e034cf67debc946a2ecb0"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_multistage.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_multistage.h",
+    "sha256": "2b73ea750e2f2455d42a2b6dcdf2553ed223a1efcd0865688866f3253dd80b41"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_pipelined.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_pipelined.h",
+    "sha256": "71c2bb92d8a3ba5926cf27d1bf4657cd61b018f9cc6f03d937386bbb1f4876f1"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/epilogue/epilogue_thread_apply_logsumexp.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/epilogue/epilogue_thread_apply_logsumexp.h",
+    "sha256": "c5ca7711ae4f94cd2b1c3cd8275114b5740b804748ca4d08c501bed9f42f6941"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/make_residual_last.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/make_residual_last.h",
+    "sha256": "17f4e1b6e4b473e21e106d2d4f71a07196a6849d41be8769c16fd2db43a0e666"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/default_warp_iterator_from_smem.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/default_warp_iterator_from_smem.h",
+    "sha256": "c46d8c01507a4a049f784545379b323194750f9b34b3400a020f2ccc2bb912d8"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/transpose_warp_iterator.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/transpose_warp_iterator.h",
+    "sha256": "8eb466e7e3013da32d0a083a3e5df978d7983b83a2dd2a5e362c526892ae894e"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/warp_iterator_from_smem.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/warp_iterator_from_smem.h",
+    "sha256": "3e97f7b3eae7cb5c21fb9b18761a6472b0b1b317923508c6a0cfcf8240983258"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_base.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/gemm/custom_mma_base.h",
+    "sha256": "9281f07cebb654fb3107a4150a9b840a54a0318957ec8c4c9535586d6369b6c1"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/predicated_tile_access_iterator_residual_last.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/predicated_tile_access_iterator_residual_last.h",
+    "sha256": "d17ec394229e52e693cea853694f0278f813624dc7cd497e2a2ace515d1d9ff6"
+  },
+  {
+    "file": "include/ATen/native/transformers/cuda/mem_eff_attention/iterators/predicated_tile_iterator_residual_last.h",
+    "url": "https://raw.githubusercontent.com/pytorch/pytorch/v2.7.1/aten/src/ATen/native/transformers/cuda/mem_eff_attention/iterators/predicated_tile_iterator_residual_last.h",
+    "sha256": "880a3383d716b50f5527564d01e066a8eabeace93a534562065c55fa4faaf220"
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "version": "10.3.9.90",
+  "url": "https://files.pythonhosted.org/packages/fb/aa/6584b56dc84ebe9cf93226a5cde4d99080c8e90ab40f0c27bda7a0f29aa1/nvidia_curand_cu12-10.3.9.90-py3-none-manylinux_2_27_x86_64.whl",
+  "wheel_sha256": "b32331d4f4df5d6eefa0554c565b626c7216f87a06a4f56fab27c3b68a830ec9",
+  "headers": {
+    "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "curand.h": "b2dad0f62765453428049cbf8406c04f8a60916e8129883ca7f9d48db6fc055c",
+    "curand_discrete.h": "daa0f706423adb65c4bb4e38e3054fec779890a031d118ebd870e1a94e1203b1",
+    "curand_discrete2.h": "66b4133b947dc7cdc0317f3cbaaeccf0cf780cb482e55133d0f0247dcc2d41e8",
+    "curand_globals.h": "6c44b52b1d0dac04d79350d178c324a96ac1d3ada73a7680a77f72db6c158975",
+    "curand_kernel.h": "4a37c07a1d77c9b5c8c627a4720733cee6b4da4200a844e8a49291858bc26adf",
+    "curand_lognormal.h": "f97fa2364252cd6a406188e8826ebcf4425365fce8adef6cc54ece6dd7658cb9",
+    "curand_mrg32k3a.h": "65555112318db09409fb7233659fcb286b46b5eb2589c6fc134025cb8f4128fb",
+    "curand_mtgp32.h": "421ae6c74a47585f8fd94bb96cac1813dca6116ab773ba81cc221354c68a31f2",
+    "curand_mtgp32_host.h": "497ab3992424cd32d2449e29a234e0fd33420b74fe1bcf477412be6e8483aabe",
+    "curand_mtgp32_kernel.h": "6a36675ebe595e7404c4495fe8b3e98a0aeb28f4e630865b4724c49c9f810e1c",
+    "curand_mtgp32dc_p_11213.h": "eff8066141f8ed4ba020012deb4bd81f99c56be414c13a43c121202e0f5c66db",
+    "curand_normal.h": "967998564d9f9f4a045563b2b5d2a15eb1cbdfa18b0a332707c3a765e09a61c0",
+    "curand_normal_static.h": "e4ae224c2f40b925827b52d5c6e8ffd32dc1563b69d1bc4eea19ddbf6adb9a2c",
+    "curand_philox4x32_x.h": "4f6d483fe45d837fed49553d25ee1d2cabb012a138a2f7f08bbaf584e63dd83c",
+    "curand_poisson.h": "2ab8573a63bf0fb69c9678fc81e2321ea769490c161eead2f55fe956d833a1d3",
+    "curand_precalc.h": "23a3597604f8d9f326f6a482b4ffab94e02ab7866caa06a5d1a8e4b5c3e611a9",
+    "curand_uniform.h": "829991810bb9afaa6980b4e0eb4357a03755252eb0314cba8c2e5b87c974e1ef"
+  }
+}
