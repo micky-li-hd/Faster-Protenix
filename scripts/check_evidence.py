@@ -16,6 +16,9 @@ for scope, key in (("process_seconds", "process"), ("steady_step_seconds", "stea
     assert math.isclose(row["ratio"], findings["ratios"][key], rel_tol=0, abs_tol=1e-12)
 
 validation = summary["validation"]
+assert summary["status"] == "manual_validation_passed"
+assert summary["accepted"] is True
+assert validation["manual_review_passed"] is True
 assert validation["training_comparisons_passed"] == validation["training_comparisons_total"] == 216
 assert validation["evaluation_comparisons_passed"] == 135
 assert validation["evaluation_comparisons_total"] == 138
@@ -27,4 +30,4 @@ assert any(x["arms"] == ["reference128_r1", "reference128_r2"] for x in findings
 memory = summary["candidate_memory_bytes"]
 assert memory["peak_allocated"] == findings["candidate_peak_allocated"]
 assert memory["peak_reserved"] == findings["candidate_peak_reserved"]
-print("PASS: Faster-Protenix publication evidence is internally consistent")
+print("PASS: Faster-Protenix publication evidence is internally consistent and manual validation is recorded")

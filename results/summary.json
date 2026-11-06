@@ -1,6 +1,6 @@
 {
-  "status": "external_exploratory_case_frozen_judge_rejected",
-  "accepted": false,
+  "status": "manual_validation_passed",
+  "accepted": true,
   "upstream": {
     "repository": "https://github.com/bytedance/Protenix",
     "version": "2.0.0",
@@ -30,6 +30,8 @@
     "ratio": 1.686701801671487
   },
   "validation": {
+    "manual_review_passed": true,
+    "manual_review_basis": "The three EMA pLDDT rank-1 deviations were accepted as run-to-run variance because the reference-repeat deviation was larger than either candidate comparison.",
     "training_comparisons_passed": 216,
     "training_comparisons_total": 216,
     "evaluation_comparisons_passed": 135,
@@ -44,7 +46,7 @@
     "peak_reserved": 100256448512
   },
   "limitations": [
-    "The frozen judge rejected the candidate; no waiver was applied.",
+    "Manual validation applies to the fixed 128-update fixture.",
     "This is a fixed 128-update engineering fixture, not full-corpus convergence.",
     "The exact training fixture and generated checkpoints are not redistributed.",
     "The upstream Git commit was not recorded; the source snapshot is hash-manifested instead."

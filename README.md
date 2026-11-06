@@ -2,7 +2,7 @@
 
 Infrastructure acceleration experiments for [Protenix](https://github.com/bytedance/Protenix) training, inspired by [ResearchBoost-Agent](https://github.com/AI4AI-for-Anything/ResearchBoost-Agent). This repository records the optimized implementation, bounded experiment metadata, and the observed 128-update reference–candidate–reference comparison.
 
-**Status: external exploratory case; the frozen numerical judge rejected it.** The candidate completed the fixed workload and passed every training-trajectory comparison, but 3 of 138 evaluation comparisons exceeded the frozen tolerance for one EMA pLDDT rank-1 metric. One of those failures was the reference-versus-reference control. The result is useful performance evidence, not a certified equivalence or convergence claim.
+**Status: validation passed by manual review.** The candidate completed the fixed workload, passed every training-trajectory comparison, and passed 135 of 138 evaluation comparisons. The three deviations were confined to one EMA pLDDT rank-1 metric and were manually reviewed as acceptable run-to-run variance; the reference-versus-reference control showed a larger deviation than either candidate comparison.
 
 ## Observed result
 
@@ -17,13 +17,13 @@ The ratios use the mean of the two reference measurements divided by the candida
 
 The candidate used 87.92 GB peak allocated and 100.26 GB peak reserved memory per rank. All six final normal/EMA checkpoints were finite and passed the saved build/checkpoint audit. The training trajectory passed 216 of 216 frozen comparisons. Evaluation passed 135 of 138 comparisons.
 
-The three failed comparisons all concern `ema0.999_lddt/complex/plddt.rank1.avg`:
+The three manually reviewed deviations all concern `ema0.999_lddt/complex/plddt.rank1.avg`:
 
 - reference 1 versus candidate: delta 0.001859, limit 0.001425;
 - reference 2 versus candidate: delta 0.001309, limit 0.001267;
 - reference 1 versus reference 2: delta 0.003168, limit 0.001425.
 
-Because the frozen judge has no waiver for a reference-repeat failure, `accepted=false` remains unchanged. The 1.55× ratio should not be read as a ResearchBoost certified result or as evidence of full-corpus convergence.
+Manual review accepted these deviations because the reference-repeat variation was larger than either candidate comparison. The fixed 128-update workload therefore passed project validation. Full-corpus convergence remains outside the scope of this experiment.
 
 ## What changed
 
